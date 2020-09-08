@@ -1,0 +1,170 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #424040;
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+  font-family: Montserrat, Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  background: linear-gradient(to right, white, #f7931e);
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: 218.75px;
+  padding-left: 15px;
+  /* padding-top: 15px; */
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-item {
+  padding: 0 10px;
+  /* color: #424040; */
+}
+
+.nav-item:hover {
+  color: #a15600;
+}
+
+.nav-item:last-child {
+  padding-right: 17px;
+}
+
+.first-screen {
+  text-align: center;
+  background-image: url('assets/s1.jpg');
+  background-size: cover;
+  height: 90vh;
+  z-index: 1;
+  display: relative;
+}
+
+.first-screen::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -44.5%);
+  z-index: 2;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 950px;
+}
+
+.welcome-text {
+  color: white;
+  font-size: 3.5rem;
+  margin: 0;
+  padding-top: 5rem;
+  position: absolute;
+  top: 35rem;
+  padding-right: 20rem;
+  padding-left: 2rem;
+  z-index: 10000;
+}
+
+.second-screen {
+  height: 40vh;
+  width: 100%;
+}
+
+.secondary-title {
+  font-size: 2.5rem;
+  padding: 1rem 0 0 1.5rem;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-item {
+  padding: 2em;
+  line-height: 1.5;
+}
+
+.third-screen {
+  border-top: 2px solid grey;
+  height: 62vh;
+  width: 100%;
+}
+
+.lead {
+  font-size: 1.2rem;
+  padding-left: 1em;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.offer-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.offer-item {
+  padding-top: 1.5em;
+}
+
+.offer-description {
+  padding-left: 1.5em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .welcome-text {
+    font-size: 2.3rem;
+    padding-top: 3rem;
+    top: 25rem;
+    padding-right: 7rem;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .welcome-text {
+    font-size: 2.3rem;
+    padding-top: 3rem;
+    top: 25rem;
+    padding-right: 7rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .welcome-text {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    padding-top: 5rem;
+    position: absolute;
+    top: 20rem;
+    padding-right: 20rem;
+    padding-left: 2rem;
+    z-index: 10000;
+  }
+}
