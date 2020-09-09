@@ -8,38 +8,40 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="hamburger.css" />
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
     <title>Penteko</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <img class="logo" src="assets/logo.png" alt="Penteko" />
-        <ul class="nav-items">
-          <li class="nav-item"><a href="#main">Strona Główna</a></li>
-          <li class="nav-item"><a href="#about">O firmie</a></li>
-          <li class="nav-item"><a href="#offer">Oferta</a></li>
-          <li class="nav-item"><a href="#">Realizacje</a></li>
-          <li class="nav-item"><a href="#">Kontakt</a></li>
+        <a href="#main"
+          ><img class="navbar__logo" src="assets/logo.png" alt="Penteko"
+        /></a>
+        <ul class="navbar__items">
+          <li class="navbar__item"><a href="#about">O firmie</a></li>
+          <li class="navbar__item"><a href="#offer">Oferta</a></li>
+          <li class="navbar__item"><a href="#">Realizacje</a></li>
+          <li class="navbar__item"><a href="#">Kontakt</a></li>
         </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </nav>
     </header>
     <main>
-      <div class="first-screen" id="main"></div>
-      <h1 class="welcome-text">
+      <div class="landing__background-image" id="main"></div>
+      <h1 class="landing__title">
         Godzimy interesy inwestora z wymaganiami ochrony środowiska
       </h1>
 
-      <div class="second-screen" id="about">
+      <div class="about" id="about">
         <div class="container">
-          <h2 class="secondary-title">O firmie</h2>
-          <section class="about-container">
-            <p class="about-item">
+          <h2 class="about__title">O firmie</h2>
+          <section class="about__body">
+            <p class="about__paragraph">
               <strong
                 >PENTEKO Agnieszka Jagodzińska, Jerzy Kozłowski spółka
                 cywilna</strong
@@ -48,7 +50,7 @@
               wspólników spółki z zakresu tworzenia ekspertyz środowiskowych
               oraz koordynacji i zarządzania projektami.
             </p>
-            <p class="about-item">
+            <p class="about__paragraph">
               Nasze dotychczasowe dokonania obejmują realizacje szeregu tematów
               (pozwoleń zintegrowanych, raportów, pozwoleń sektorowych, analiz)
               dla następujących branż: rafineryjnej, ciężkiej chemii
@@ -58,39 +60,45 @@
             </p>
           </section>
         </div>
-        <section class="third-screen" id="offer">
+        <section class="offers" id="offer">
           <div class="container">
-            <h2 class="secondary-title">Oferta</h2>
-            <span class="lead"
+            <h2 class="offers__title">Oferta</h2>
+            <span class="offers__lead"
               >W ramach działalności firmy oferujemy wykonanie następujących
               opracowań:</span
             >
-            <ul class="offer-items">
-              <li class="offer-item">
-                <strong>OCENY ODDZIAŁYWANIA NA ŚRODOWISKO</strong>
-                <p class="offer-description">
+            <ul class="offers__items">
+              <li class="offers__item">
+                <h4 class="offers__subtitle">
+                  OCENY ODDZIAŁYWANIA NA ŚRODOWISKO
+                </h4>
+                <p class="offers__description">
                   Opracowanie kart informacyjnych oraz raportów o oddziaływaniu
                   na środowisko przedsięwzięć.
                 </p>
               </li>
-              <li class="offer-item">
-                <strong>ANALIZA ZGODNOŚCI DOŚ Z PROJEKTEM BUDOWLANYM</strong>
-                <p class="offer-description">
+              <li class="offers__item">
+                <h4 class="offers__subtitle">
+                  ANALIZA ZGODNOŚCI DOŚ Z PROJEKTEM BUDOWLANYM
+                </h4>
+                <p class="offers__description">
                   Wykonywana w przypadku zmian w projekcie budowlanym w stosunku
                   do zapisów zawartych w decyzji o środowiskowych
                   uwarunkowaniach.
                 </p>
               </li>
-              <li class="offer-item">
-                <strong>POZWOLENIA ZINTEGROWANE</strong>
-                <p class="offer-description">
+              <li class="offers__item">
+                <h4 class="offers__subtitle">POZWOLENIA ZINTEGROWANE</h4>
+                <p class="offers__description">
                   Opracowanie wniosków o wydanie decyzji udzielającej pozwolenia
                   zintegrowanego dla instalacji typu IPPC.
                 </p>
               </li>
-              <li class="offer-item">
-                <strong>ANALIZA SPEŁNIANIA WYMOGÓW W ZAKRESIE BAT</strong>
-                <p class="offer-description">
+              <li class="offers__item">
+                <h4 class="offers__subtitle">
+                  ANALIZA SPEŁNIANIA WYMOGÓW W ZAKRESIE BAT
+                </h4>
+                <p class="offers__description">
                   Ocena spełniania przez instalację wymogów najlepszej dostępnej
                   techniki (BAT) dla następujących branż: rafinerie ropy
                   naftowej i gazu, ciężka chemia organiczna, przemysł
@@ -99,17 +107,19 @@
                   trzody chlewnej, spalania i obróbki odpadów.
                 </p>
               </li>
-              <li class="offer-item">
-                <strong>POZWOLENIA SEKTOROWE</strong>
-                <p class="offer-description">
+              <li class="offers__item">
+                <h4 class="offers__subtitle">POZWOLENIA SEKTOROWE</h4>
+                <p class="offers__description">
                   Opracowanie operatów wodnoprawnych, pozwoleń na wprowadzanie
                   gazów i pyłów do powietrza, pozwoleń odpadowych, zgłoszeń
                   instalacji.
                 </p>
               </li>
-              <li class="offer-item">
-                <strong>ANALIZY W ZAKRESIE EMISJI NMVOC (NMLZO)</strong>
-                <p class="offer-description">
+              <li class="offers__item">
+                <h4 class="offers__subtitle">
+                  ANALIZY W ZAKRESIE EMISJI NMVOC (NMLZO)
+                </h4>
+                <p class="offers__description">
                   Wykonywanie analiz wielkości emisji niezorganizowanej NMVOC
                   (oraz pojedynczych substancji węglowodorowych) w następujących
                   obiektach i źródłach: stacje paliw, terminale naftowe i

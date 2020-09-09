@@ -1,28 +1,29 @@
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('.nav-items');
-const navItems = document.querySelectorAll('.nav-item');
+const burger = document.querySelector('.hamburger');
+const navbar = document.querySelector('.navbar__items');
+const navbarItems = document.querySelectorAll('.navbar__item');
+const logo = document.querySelector('.navbar__logo')
 
 burger.addEventListener('click', toggleNav);
-navItems.forEach((item) => item.addEventListener('click', toggleNav));
+navbarItems.forEach((item) => item.addEventListener('click', toggleNav));
 
 function toggleNav() {
-  nav.classList.toggle('nav-active');
+  navbar.classList.toggle('navbar--active');
   animateLinks();
   animateBurger();
 }
 
 function animateLinks() {
-  navItems.forEach((item, index) => {
+  navbarItems.forEach((item, index) => {
     if (item.style.animation) {
       item.style.animation = '';
     } else {
-      item.style.animation = `navItemFade 0.5s ease forwards ${
-        index / 7 + 0.5
+      item.style.animation = `navbarItemFade 0.2s ease forwards ${
+        index / 7 + 0.2
       }s`;
     }
   });
 }
 
 function animateBurger() {
-  burger.classList.toggle('toggle');
+  burger.classList.toggle('is-active');
 }
