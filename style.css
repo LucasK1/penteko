@@ -168,11 +168,12 @@ li {
 
 .projects__list-item {
   font-size: 1.1rem;
-  list-style-type: armenian;
+  list-style-type: disc;
   padding: 16px 0;
 }
 
 .projects__btn-more {
+  font-size: 1.1rem;
   padding: 16px;
   text-decoration: underline;
   float: right;
