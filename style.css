@@ -1,10 +1,15 @@
+:root {
+  --primaryColor: #f7931e;
+  --primaryText: #424040;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   box-sizing: border-box;
-  color: #424040;
+  color: var(--primaryText);
   padding: 0;
   margin: 0;
   font-family: 'Poppins', Montserrat, Helvetica, sans-serif;
@@ -22,7 +27,7 @@ li {
 }
 
 .navbar {
-  background: linear-gradient(to right, #fff, #f7931e);
+  background: linear-gradient(to right, #fff, var(--primaryColor));
   height: 10vh;
   width: 100%;
   display: flex;
@@ -54,7 +59,7 @@ li {
   padding-right: 17px;
 }
 
-/* MAIN BODY */
+/* Landing page */
 
 .landing__background-image {
   text-align: center;
@@ -81,24 +86,27 @@ li {
   color: #fff;
   font-size: 3rem;
   margin: 0;
-  padding-top: 5rem;
+  padding-top: 80px;
   position: absolute;
-  top: 35rem;
-  padding-right: 55rem;
-  padding-left: 2rem;
-  z-index: 100;
+  top: 560px;
+  padding-right: 880px;
+  padding-left: 32px;
+  z-index: 3;
 }
 
+/* About page */
+
 .about {
-  height: 40vh;
+  height: 100%;
   width: 100%;
 }
 
 .about__title,
-.offers__title {
+.offer__title,
+.projects__title {
   font-size: 2.5rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  padding: 16px;
+  margin-bottom: 16px;
 }
 
 .about__body {
@@ -108,45 +116,103 @@ li {
 }
 
 .about__paragraph {
-  padding: 1.5rem;
+  padding: 24px;
   margin-top: 0;
+  margin-bottom: 50px;
   line-height: 1.5;
 }
 
-.offers {
-  border-top: 2px solid grey;
-  height: 62vh;
+/* Offer page */
+
+.offer {
+  border-top: 2px solid var(--primaryColor);
+  height: 100%;
   width: 100%;
 }
 
-.offers__lead {
+.offer__lead {
   font-size: 1.4rem;
-  padding-left: 1em;
+  padding-left: 16px;
   font-weight: 600;
   text-decoration: underline;
 }
 
-.offers__items {
+.offer__items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-left: 0;
 }
 
-.offers__item {
-  padding: 1.5em 2em 0 2em;
+.offer__item {
+  padding: 24px 32px 0 32px;
 }
 
-.offers__description {
-  padding-left: 1.5em;
+.offer__description {
+  padding-left: 24px;
 }
+
+/* Projects page */
+
+.projects {
+  border-top: 2px solid var(--primaryColor);
+  height: 100%;
+  width: 100%;
+}
+
+.projects__lead {
+  font-size: 1.25rem;
+  padding-bottom: 16px;
+  font-weight: 600;
+}
+
+.projects__list-item {
+  font-size: 1.1rem;
+  list-style-type: armenian;
+  padding: 16px 0;
+}
+
+.projects__btn-more {
+  padding: 16px;
+  text-decoration: underline;
+  float: right;
+  margin-left: 700px;
+}
+.projects__btn-more:hover {
+  cursor: pointer;
+  color: var(--primaryColor);
+}
+
+.projects__modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.projects__modal-content {
+  background-color: #fff;
+  height: 80%;
+  width: 50%;
+  margin: 100px auto;
+  overflow: auto;
+}
+.projects__modal-list-item {
+  list-style-type: disc;
+  padding: 10px 0;
+}
+
+/* Responsivity */
 
 @media only screen and (max-width: 1280) {
   .landing__title {
     font-size: 2.3rem;
-    padding-top: 3rem;
-    top: 25rem;
-    padding-right: 7rem;
+    padding-top: 48rem;
+    top: 400px;
+    padding-right: 112px;
   }
   .navbar__items {
     width: 50%;
@@ -162,7 +228,7 @@ li {
   .about__title {
     font-size: 2rem;
   }
-  .offers__lead {
+  .offer__lead {
     font-size: 1.1em;
   }
   .navbar__items {
@@ -172,8 +238,8 @@ li {
     margin: 0;
     top: 10vh;
     right: -120vw;
-    background: linear-gradient(to right, #fff, #f7931e);
-    z-index: 1001;
+    background: linear-gradient(to right, #fff, var(--primaryColor));
+    z-index: 4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,27 +249,28 @@ li {
   .navbar__item {
     opacity: 0;
   }
+
   .landing__title {
     color: #fff;
     font-size: 1.5rem;
     margin: 0;
-    padding-top: 5rem;
-    top: 20rem;
-    padding-right: 20rem;
-    padding-left: 2rem;
+    padding-top: 80px;
+    top: 320px;
+    padding-right: 320px;
+    padding-left: 32px;
   }
   .about__body {
     flex-direction: column;
   }
-  .offers__lead {
+  .offer__lead {
     display: inline-block;
     text-align: left;
     /* padding: 2rem; */
-    margin-left: 1rem;
-    margin-right: 1.5rem;
+    margin-left: 16px;
+    margin-right: 24px;
   }
-  .offers__item {
-    padding: 2rem;
+  .offer__item {
+    padding: 32px;
   }
 
   @keyframes navbarItemFade {
@@ -221,13 +288,11 @@ li {
 @media only screen and (min-width: 600px) and (max-height: 768px) {
   .landing__title {
     font-size: 2rem;
-    padding-top: 3rem;
-    top: 8rem;
-    padding-right: 7rem;
+    padding-top: 48px;
+    top: 128px;
+    padding-right: 112px;
   }
 }
-
-
 
 /* Additional classes */
 .navbar--active {
