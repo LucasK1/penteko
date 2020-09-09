@@ -1,10 +1,12 @@
 const burger = document.querySelector('.hamburger');
 const navbar = document.querySelector('.navbar__items');
 const navbarItems = document.querySelectorAll('.navbar__item');
-const logo = document.querySelector('.navbar__logo')
+const logo = document.querySelector('.navbar__logo');
 
 burger.addEventListener('click', toggleNav);
-navbarItems.forEach((item) => item.addEventListener('click', toggleNav));
+if (screen.width >= '768px') {
+  navbarItems.forEach((item) => item.addEventListener('click', toggleNav));
+}
 
 function toggleNav() {
   navbar.classList.toggle('navbar--active');
