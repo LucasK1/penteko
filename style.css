@@ -171,7 +171,7 @@ li {
     width: 100vw;
     margin: 0;
     top: 10vh;
-    right: -110%;
+    right: -120vw;
     background: linear-gradient(to right, #fff, #f7931e);
     z-index: 1001;
     display: flex;
@@ -229,7 +229,7 @@ li {
 
 /* Additional classes */
 .navbar--active {
-  transform: translateX(-100%);
+  transform: translateX(-120vw);
 }
 /* .toggle .line1 {
   transform: rotate(-45deg) translate(-4.5px, 8px);
