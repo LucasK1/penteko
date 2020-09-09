@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 body {
@@ -177,7 +178,7 @@ li {
   padding: 16px;
   text-decoration: underline;
   float: right;
-  margin-left: 700px;
+  margin-left: 650px;
 }
 .projects__btn-more:hover {
   cursor: pointer;
