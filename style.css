@@ -1,6 +1,7 @@
 :root {
   --primaryColor: #f7931e;
   --primaryText: #424040;
+  --primaryGradient: linear-gradient(to right, #fff, #f7931e);
 }
 
 html {
@@ -21,6 +22,12 @@ li {
   color: inherit;
   list-style: none;
 }
+button {
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+}
 
 .container {
   margin: 0 auto;
@@ -28,7 +35,7 @@ li {
 }
 
 .navbar {
-  background: linear-gradient(to right, #fff, var(--primaryColor));
+  background: var(--primaryGradient);
   height: 10vh;
   width: 100%;
   display: flex;
@@ -153,6 +160,9 @@ li {
 .offer__description {
   padding-left: 24px;
 }
+.offer__description:last-child {
+  margin-bottom: 25px;
+}
 
 /* Projects page */
 
@@ -202,11 +212,28 @@ li {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
-.projects__modal-content {
-  background-color: #fff;
+
+.projects__modal-container {
+  text-align: right;
   height: 80%;
   width: 50%;
   margin: 100px auto;
+}
+.projects__modal-btn {
+  font-size: 3rem;
+  padding: 5px;
+  color: white;
+}
+.projects__modal-btn:hover {
+  cursor: pointer;
+  color: var(--primaryColor)
+}
+.projects__modal-content {
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 0 0 10px #000;
+  height: 90%;
+  width: 100%;
   overflow: auto;
 }
 .projects__modal-list-item {
@@ -218,7 +245,7 @@ li {
 .contact {
   font-size: 1.3rem;
   border-top: 2px solid var(--primaryColor);
-  height: 40vh;
+  height: 100%;
   width: 100%;
 }
 .contact__information {
@@ -234,6 +261,21 @@ li {
 }
 .contact__details {
   margin: 0;
+}
+.contact__additional {
+  margin: 30px 0;
+}
+
+/* Footer */
+.footer {
+  font-size: 0.9rem;
+  box-shadow:  0 -1px 5px rgba(0, 0, 0, 0.3); 
+  background: var(--primaryGradient);
+  height: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
 }
 
 /* Responsivity */
@@ -271,7 +313,7 @@ li {
     margin: 0;
     top: 10vh;
     right: -120vw;
-    background: linear-gradient(to right, #fff, var(--primaryColor));
+    background: var(--primaryGradient);
     z-index: 4;
     display: flex;
     flex-direction: column;

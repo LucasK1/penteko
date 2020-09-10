@@ -16,11 +16,15 @@ if (screen.width <= 768) {
 // More btn in projects section opens a modal with all projects
 moreBtn.addEventListener('click', toggleModal);
 modal.addEventListener('click', toggleModal);
+// modal.addEventListener('click', (e) => console.log(e))
 
-function toggleModal() {
+function toggleModal(e) {
   if (modal.style.display === '') {
     modal.style.display = 'block';
-  } else {
+  } else if (
+    e.target.className === 'projects__modal' ||
+    e.target.className === 'projects__modal-btn'
+  ) {
     modal.style.display = '';
   }
 }
