@@ -104,7 +104,8 @@ li {
 
 .about__title,
 .offer__title,
-.projects__title {
+.projects__title,
+.contact__title {
   font-size: 2.5rem;
   padding: 16px;
   margin-bottom: 16px;
@@ -172,15 +173,21 @@ li {
   list-style-type: disc;
   padding: 16px 0;
 }
+.projects__btn-positioning {
+  width: 100%;
+  height: 75px;
+  text-align: left;
+}
 
 .projects__btn-more {
+  display: inline-block;
   font-size: 1.1rem;
-  padding: 16px;
+  padding: 20px;
   text-decoration: underline;
-  float: right;
   margin-left: 650px;
 }
-.projects__btn-more:hover {
+.projects__btn-more:hover,
+.contact__email:hover {
   cursor: pointer;
   color: var(--primaryColor);
 }
@@ -207,28 +214,56 @@ li {
   padding: 10px 0;
 }
 
+/* Contact */
+.contact {
+  font-size: 1.3rem;
+  border-top: 2px solid var(--primaryColor);
+  height: 40vh;
+  width: 100%;
+}
+.contact__information {
+  text-align: center;
+}
+
+.contact__label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.contact__email {
+  text-decoration: underline;
+}
+.contact__details {
+  margin: 0;
+}
+
 /* Responsivity */
 
 @media only screen and (max-width: 1280px) {
   .landing__title {
     font-size: 2.3rem;
-    /* bottom: 120px; */
   }
   .navbar__items {
     width: 50%;
     font-size: 0.9rem;
   }
+  .offer__lead,
+  .projects__lead {
+    display: inline-block;
+    text-align: left;
+    margin-left: 16px;
+    margin-right: 24px;
+  }
+  .projects__modal-content {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   body {
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     overflow-x: hidden;
     overflow-y: scroll;
   }
-  /* header, main, .landing__background-image, .navbar, .navbar__items, section, div, body, html {
-    overflow-x: hidden;
-  } */
   .navbar__items {
     position: absolute;
     height: 90vh;
@@ -241,7 +276,6 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* transform: translateX(100%); */
     transition: transform 0.4s ease-in;
   }
   .navbar__item {
@@ -257,21 +291,30 @@ li {
     padding-right: 320px;
     padding-left: 32px;
   }
-  .about__title {
+  .about__title,
+  .offer__title,
+  .projects__title,
+  .contact__title {
     font-size: 2rem;
   }
   .about__body {
     flex-direction: column;
   }
-  .offer__lead {
-    font-size: 1.1em;
+  .offer__lead,
+  .projects__lead {
+    font-size: 1.1rem;
     display: inline-block;
     text-align: left;
     margin-left: 16px;
     margin-right: 24px;
   }
-  .offer__item {
+  .offer__item,
+  .projects__list-item {
     padding: 32px;
+    font-size: 0.9rem;
+  }
+  .projects__btn-more {
+    font-size: 0.9rem;
   }
 
   @keyframes navbarItemFade {

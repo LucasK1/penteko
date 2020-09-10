@@ -2,7 +2,10 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
@@ -24,7 +27,7 @@
           <li class="navbar__item"><a href="#about">O firmie</a></li>
           <li class="navbar__item"><a href="#offer">Oferta</a></li>
           <li class="navbar__item"><a href="#projects">Realizacje</a></li>
-          <li class="navbar__item"><a href="#">Kontakt</a></li>
+          <li class="navbar__item"><a href="#contact">Kontakt</a></li>
         </ul>
         <button class="hamburger hamburger--squeeze" type="button">
           <span class="hamburger-box">
@@ -174,9 +177,12 @@
               Karta informacyjna przedsięwzięcia – spalarnia odpadów medycznych
               w Wiązownej,
             </li>
-            <a class="projects__btn-more"
-              >Dowiedz się więcej o naszych realizacjach</a
-            >
+            <div class="projects__btn-positioning">
+              <a class="projects__btn-more"
+                >Dowiedz się więcej o naszych realizacjach</a
+              >
+            </div>
+
             <div class="projects__modal">
               <div class="projects__modal-content">
                 <ul class="projects__modal-list">
@@ -339,6 +345,23 @@
           </ul>
         </div>
       </section>
+      <footer class="contact" id="contact">
+        <div class="container">
+          <div class="contact__information">
+            <h1 class="contact__title">Kontakt</h1>
+            <address>
+              <p class="contact__label">Napisz do nas:</p>
+              <a class="contact__email" href="mailto:kontakt@penteko.pl"
+                >kontakt@penteko.pl</a>
+              <p class="contact__label">Zadzwoń</p>
+              <p class="contact__details">694 419 653 lub 690 173 724</p>
+              <p class="contact__label">Adres:</p>
+              <p class="contact__details">Płocka 15C m.75</p>
+              <p class="contact__details">01-231 Warszawa</p>
+            </address>
+          </div>
+        </div>
+      </footer>
     </main>
     <script src="main.js"></script>
   </body>
