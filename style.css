@@ -113,15 +113,18 @@ button {
 .offer__title,
 .projects__title,
 .contact__title {
+  text-align: left;
   font-size: 2.5rem;
   padding: 16px;
   margin-bottom: 16px;
+  border-left: 1px dashed #000;
 }
 
 .about__body {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  font-size: 1.1rem;
 }
 
 .about__paragraph {
@@ -154,10 +157,16 @@ button {
 }
 
 .offer__item {
+  font-size: 1.05rem;
   padding: 24px 32px 0 32px;
 }
 
+.offer__subtitle {
+  font-size: 1.15rem;
+}
+
 .offer__description {
+  font-size: 1.1rem;
   padding-left: 24px;
 }
 .offer__description:last-child {
@@ -217,7 +226,7 @@ button {
   text-align: right;
   height: 80%;
   width: 50%;
-  margin: 100px auto;
+  margin: 70px auto;
 }
 .projects__modal-btn {
   font-size: 3rem;
@@ -295,7 +304,7 @@ button {
     margin-left: 16px;
     margin-right: 24px;
   }
-  .projects__modal-content {
+  .projects__modal-container {
     width: 70%;
   }
 }
@@ -338,9 +347,11 @@ button {
   .projects__title,
   .contact__title {
     font-size: 2rem;
+    border: none;
   }
   .about__body {
     flex-direction: column;
+    font-size: 1rem;
   }
   .offer__lead,
   .projects__lead {
@@ -350,13 +361,20 @@ button {
     margin-left: 16px;
     margin-right: 24px;
   }
-  .offer__item,
+  .offer__subtitle {
+    font-size: 1.1rem;
+  }
+  .offer__description,
   .projects__list-item {
-    padding: 32px;
-    font-size: 0.9rem;
+    margin: 0;
+    padding: 20px;
+    font-size: 1rem;
   }
   .projects__btn-more {
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+  .contact {
+    font-size: 1rem;
   }
 
   @keyframes navbarItemFade {
