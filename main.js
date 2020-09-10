@@ -9,7 +9,8 @@ const modal = document.querySelector('.projects__modal');
 burger.addEventListener('click', toggleNav);
 
 // Clicking a navlink closes the modal
-if (screen.width >= '768px') {
+if (screen.width <= 768) {
+  console.log(navbarItems);
   navbarItems.forEach((item) => item.addEventListener('click', toggleNav));
 }
 // More btn in projects section opens a modal with all projects
@@ -18,7 +19,7 @@ modal.addEventListener('click', toggleModal);
 
 function toggleModal() {
   if (modal.style.display === '') {
-  modal.style.display = 'block';
+    modal.style.display = 'block';
   } else {
     modal.style.display = '';
   }
