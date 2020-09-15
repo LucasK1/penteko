@@ -165,7 +165,7 @@ button {
 
 .offer__item {
   font-size: 1.05rem;
-  padding: 24px 32px 0 32px;
+  padding: 0 32px 24px 32px;
 }
 
 .offer__subtitle {
@@ -190,7 +190,7 @@ button {
 
 .projects__lead {
   font-size: 1.25rem;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   padding-left: 20px;
 }
 
@@ -359,13 +359,19 @@ button {
     flex-direction: column;
     font-size: 1rem;
   }
+  .about__paragraph {
+    padding: 0 20px 0 20px;
+    margin-bottom: 20px;
+
+  }
   .offer__lead,
   .projects__lead {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     display: inline-block;
     text-align: left;
     margin-left: 16px;
     margin-right: 24px;
+    padding-bottom: 0;
   }
   .offer__subtitle {
     font-size: 1.1rem;
