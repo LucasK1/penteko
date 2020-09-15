@@ -4,13 +4,14 @@ const navbarItems = document.querySelectorAll('.navbar__item');
 const logo = document.querySelector('.navbar__logo');
 const moreBtn = document.querySelector('.projects__btn-more');
 const modal = document.querySelector('.projects__modal');
+const projectsMoreBtn = document.querySelector('.projects__btn-more');
 
 // clicking the burger opens the drawer menu
 burger.addEventListener('click', toggleNav);
 
 // Clicking a navlink closes the modal
 if (screen.width <= 768) {
-  console.log(navbarItems);
+  projectsMoreBtn.innerText = 'Więcej...';
   navbarItems.forEach((item) => item.addEventListener('click', toggleNav));
 }
 // More btn in projects section opens a modal with all projects

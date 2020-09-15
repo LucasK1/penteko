@@ -31,6 +31,7 @@ h5 {
   font-weight: 400;
 }
 button {
+  color: inherit;
   margin: 0;
   padding: 0;
   background-color: inherit;
@@ -157,6 +158,7 @@ button {
 }
 
 .offer__items {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -165,7 +167,7 @@ button {
 
 .offer__item {
   font-size: 1.05rem;
-  padding: 0 32px 24px 32px;
+  padding: 0 32px 10px 32px;
 }
 
 .offer__subtitle {
@@ -202,7 +204,8 @@ button {
 .projects__btn-positioning {
   width: 100%;
   height: 75px;
-  text-align: left;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .projects__btn-more {
@@ -210,7 +213,6 @@ button {
   font-size: 1.1rem;
   padding: 20px;
   text-decoration: underline;
-  margin-left: 650px;
 }
 .projects__btn-more:hover,
 .contact__email:hover {
@@ -373,6 +375,9 @@ button {
     margin-right: 24px;
     padding-bottom: 0;
   }
+  .offer__items {
+    margin-top: 20px;
+  }
   .offer__subtitle {
     font-size: 1.1rem;
   }
@@ -384,11 +389,12 @@ button {
   .projects__list-item {
     font-size: 1rem;
     margin: 0;
-    padding: 10px;
+    padding: 15px;
   }
   .projects__btn-more {
     font-size: 1rem;
     margin-left: 60%;
+    margin-right: 130px;
   }
   .projects__modal-container {
     width: 90%;
