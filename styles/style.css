@@ -81,7 +81,7 @@ button {
 
 .landing {
   text-align: left;
-  background-image: url('assets/s1.jpg');
+  background-image: url('../assets/s1.jpg');
   background-size: cover;
   height: 90vh;
   z-index: 1;
@@ -347,7 +347,7 @@ button {
     color: #fff;
     font-size: 1.5rem;
     margin: 0;
-    top: 280px;
+    top: 220px;
     padding-right: 320px;
     padding-left: 32px;
   }
@@ -397,6 +397,10 @@ button {
     margin-left: 60%;
     margin-right: 130px;
   }
+  /* .projects__modal {
+    margin: 5% auto;
+  } */
+
   .projects__modal-container {
     width: 90%;
     height: 90%;

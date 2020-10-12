@@ -9,7 +9,7 @@ const projectsMoreBtn = document.querySelector('.projects__btn-more');
 // clicking the burger opens the drawer menu
 burger.addEventListener('click', toggleNav);
 
-// Clicking a navlink closes the modal
+// Clicking a navlink closes the modal and changes the more btn
 if (screen.width <= 768) {
   projectsMoreBtn.innerText = 'Więcej...';
   navbarItems.forEach((item) => item.addEventListener('click', toggleNav));
