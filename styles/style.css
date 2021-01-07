@@ -2,6 +2,7 @@
   --primaryColor: #f7931e;
   --primaryText: #424040;
   --primaryGradient: linear-gradient(to right, #fff, #f7931e);
+  --hoverTransition: color 100ms linear;
 }
 
 html {
@@ -67,7 +68,7 @@ button {
 .navbar__item {
   font-size: 1.3rem;
   text-align: center;
-  transition: color 100ms linear;
+  transition: var(--hoverTransition);
 }
 
 .navbar__item:hover {
@@ -215,7 +216,7 @@ button {
   font-size: 1.1rem;
   padding: 20px;
   text-decoration: underline;
-  transition: color 100ms linear;
+  transition: var(--hoverTransition);
 }
 .projects__btn-more:hover,
 .contact__email:hover {
@@ -244,6 +245,8 @@ button {
   font-size: 3rem;
   padding: 5px;
   color: white;
+  transition: var(--hoverTransition);
+  
 }
 .projects__modal-btn:hover {
   cursor: pointer;
@@ -265,7 +268,7 @@ button {
 /* Contact */
 .contact__link {
   text-decoration: underline;
-  transition: color 100ms linear;
+  transition: var(--hoverTransition);
 }
 .contact__link:hover {
   color: var(--primaryColor);
