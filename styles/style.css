@@ -46,7 +46,7 @@ button {
 
 .navbar {
   background: var(--primaryGradient);
-  height: 10vh;
+  height: 150px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -134,16 +134,16 @@ button {
 
 .about__body {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
-  font-size: 1.1rem;
 }
 
 .about__paragraph {
+  font-size: 1.1rem;
+  line-height: 1.5;
   padding: 24px;
   margin-top: 0;
   margin-bottom: 50px;
-  line-height: 1.5;
 }
 
 /* Offer page */
@@ -259,6 +259,7 @@ button {
   height: 90%;
   width: 100%;
   overflow: auto;
+  padding-right: 20px;
 }
 .projects__modal-list-item {
   list-style-type: disc;
