@@ -451,14 +451,14 @@ button {
     margin-left: 60%;
     margin-right: 130px;
   }
-  /* .projects__modal {
-    margin: 5% auto;
-  } */
 
   .projects__modal-container {
     width: 90%;
     height: 90%;
     margin: 30px auto;
+  }
+  .projects__modal-content {
+    padding-right: 0;
   }
   .contact {
     font-size: 1rem;
