@@ -15,7 +15,7 @@ body {
   color: var(--primaryText);
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', Montserrat, Helvetica, sans-serif;
+  font-family: "Poppins", Montserrat, Helvetica, sans-serif;
   font-display: swap;
 }
 a,
@@ -83,7 +83,7 @@ button {
 
 .landing {
   text-align: left;
-  background-image: url('../assets/s1.jpg');
+  background-image: url("../assets/s1.jpg");
   background-size: cover;
   height: 90vh;
   z-index: 1;
@@ -91,7 +91,7 @@ button {
 }
 
 .landing::before {
-  content: '';
+  content: "";
   background-color: rgba(0, 0, 0, 0.5);
   height: 90vh;
   width: 100%;
@@ -246,7 +246,6 @@ button {
   padding: 5px;
   color: white;
   transition: var(--hoverTransition);
-  
 }
 .projects__modal-btn:hover {
   cursor: pointer;
@@ -336,12 +335,15 @@ button {
     overflow-x: hidden;
     overflow-y: scroll;
   }
+  .navbar {
+    height: 100px;
+  }
   .navbar__items {
     position: absolute;
-    height: 90vh;
-    width: 100vw;
+    height: 87vh;
+    width: 50vw;
     margin: 0;
-    top: 10vh;
+    top: 100px;
     right: -120vw;
     background: var(--primaryGradient);
     z-index: 4;
@@ -352,6 +354,13 @@ button {
   }
   .navbar__item {
     opacity: 0;
+  }
+
+  .landing {
+    height: 87vh;
+  }
+  .landing::before {
+    height: 87vh;
   }
 
   .landing__title {
@@ -376,7 +385,6 @@ button {
   .about__paragraph {
     padding: 0 20px 0 20px;
     margin-bottom: 20px;
-
   }
   .offer__lead,
   .projects__lead {
