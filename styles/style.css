@@ -49,7 +49,11 @@ button {
   top: -150px;
 }
 
-.landing, .about, .offer, .projects, .contact {
+.landing,
+.about,
+.offer,
+.projects,
+.contact {
   position: relative;
 }
 
@@ -349,6 +353,10 @@ button {
     overflow-x: hidden;
     overflow-y: scroll;
   }
+  .scrollHelper {
+    position: absolute;
+    top: -100px;
+  }
   .navbar {
     height: 100px;
   }
@@ -371,6 +379,7 @@ button {
   }
 
   .landing {
+    margin-top: 100px;
     height: 87vh;
   }
   .landing::before {
