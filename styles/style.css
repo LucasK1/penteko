@@ -44,13 +44,25 @@ button {
   max-width: 950px;
 }
 
+.scrollHelper {
+  position: absolute;
+  top: -150px;
+}
+
+.landing, .about, .offer, .projects, .contact {
+  position: relative;
+}
+
 .navbar {
   background: var(--primaryGradient);
   height: 150px;
   width: 100%;
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 99;
 }
 
 .navbar__logo {
@@ -85,7 +97,9 @@ button {
   text-align: left;
   background-image: url("../assets/s1.jpg");
   background-size: cover;
+  background-attachment: fixed;
   height: 90vh;
+  margin-top: 150px;
   z-index: 1;
   position: relative;
 }
