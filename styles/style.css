@@ -337,6 +337,15 @@ button {
     width: 50%;
     font-size: 0.9rem;
   }
+  .landing {
+    margin-top: 100px;
+    min-height: 87vh;
+    height: 87vh;
+  }
+  .landing::before {
+    height: 87vh;
+  }
+
   .offer__lead,
   .projects__lead {
     display: inline-block;
@@ -349,7 +358,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   body {
     /* font-size: 0.9rem; */
     overflow-x: hidden;
