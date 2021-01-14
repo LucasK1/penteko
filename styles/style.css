@@ -99,13 +99,15 @@ button {
 
 .landing {
   text-align: left;
-  background-image: url("../assets/s1.jpg");
-  background-size: cover;
-  background-attachment: fixed;
+  min-height: 90vh;
+  background: transparent;
   height: 90vh;
   margin-top: 150px;
-  z-index: 1;
   position: relative;
+  /* background-image: url("../assets/s1.jpg");
+  background-size: cover;
+  z-index: 1;
+  background-attachment: fixed; */
 }
 
 .landing::before {
@@ -380,6 +382,7 @@ button {
 
   .landing {
     margin-top: 100px;
+    min-height: 87vh;
     height: 87vh;
   }
   .landing::before {
