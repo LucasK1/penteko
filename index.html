@@ -15,6 +15,8 @@
     />
     <link rel="stylesheet" href="styles/hamburger.css" />
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/parallax.min.js"></script>
     <title>Penteko</title>
   </head>
 
@@ -38,7 +40,13 @@
       </nav>
     </header>
     <main>
-      <div class="landing">
+      <div
+        class="landing"
+        data-parallax="scroll"
+        data-image-src="/assets/s1.jpg"
+        zindex="1"
+        positionX=""
+      >
         <div class="scrollHelper" id="main"></div>
         <h1 class="landing__title">
           Godzimy interesy inwestora z&nbsp;wymaganiami ochrony środowiska
