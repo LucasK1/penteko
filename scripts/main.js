@@ -22,11 +22,13 @@ modal.addEventListener('click', toggleModal);
 function toggleModal(e) {
   if (modal.style.display === '') {
     modal.style.display = 'block';
+    document.body.style.overflowY = 'hidden';
   } else if (
     e.target.className === 'projects__modal' ||
     e.target.className === 'projects__modal-btn'
   ) {
     modal.style.display = '';
+    document.body.style.overflowY = 'visible';
   }
 }
 
