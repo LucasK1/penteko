@@ -15,7 +15,7 @@ body {
   color: var(--primaryText);
   padding: 0;
   margin: 0;
-  font-family: "Poppins", Montserrat, Helvetica, sans-serif;
+  font-family: 'Poppins', Montserrat, Helvetica, sans-serif;
   font-display: swap;
 }
 a,
@@ -107,7 +107,7 @@ button {
 }
 
 .landing::before {
-  content: "";
+  content: '';
   background-color: rgba(0, 0, 0, 0.5);
   height: 90vh;
   width: 100%;
@@ -319,9 +319,9 @@ button {
   background: var(--primaryGradient);
   height: 25px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 
 /* Responsivity */
