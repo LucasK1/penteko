@@ -57,6 +57,18 @@ button {
   position: relative;
 }
 
+.navbar__language {
+  font-size: 0.9rem;
+  position: absolute;
+  top: 7px;
+  right: 3.5%;
+  color: var(--primaryText);
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .navbar {
   background: var(--primaryGradient);
   height: 150px;
