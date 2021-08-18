@@ -205,6 +205,7 @@ button {
 
 .offer__subtitle {
   font-size: 1.15rem;
+  letter-spacing: 0.05em;
 }
 
 .offer__description {
