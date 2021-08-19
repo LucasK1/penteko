@@ -187,11 +187,11 @@ button {
 .offer__lead {
   font-size: 1.4rem;
   padding-left: 20px;
-  text-decoration: underline;
+  font-style: italic;
 }
 
 .offer__items {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -219,20 +219,31 @@ button {
 /* Projects page */
 
 .projects {
-  border-top: 2px solid var(--primaryColor);
-  height: 100%;
   width: 100%;
+  height: 100%;
+  border-top: 2px solid var(--primaryColor);
 }
 
 .projects__lead {
-  font-size: 1.25rem;
   padding-left: 20px;
+  font-size: 1.35rem;
+}
+
+.projects__lead:first-of-type {
+  border: 1px solid black;
+  margin: 30px 10px 40px 10px;
+  padding: 7px;
+  padding-left: 20px;
+}
+
+.projects__styled-span {
+  font-weight: 700;
 }
 
 .projects__list-item {
   font-size: 1.1rem;
   list-style-type: disc;
-  padding: 16px 0;
+  padding: 10px 0 16px 0;
 }
 .projects__btn-positioning {
   width: 100%;
@@ -419,8 +430,9 @@ button {
     font-size: 1rem;
   }
   .about__paragraph {
-    padding: 0 20px 0 20px;
+    width: 90%;
     margin-bottom: 20px;
+    padding: 0 20px 0 20px;
   }
   .offer__lead,
   .projects__lead {
